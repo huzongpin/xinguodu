@@ -1,4 +1,15 @@
 第1~2周学习日志
                 --20170711
 1、开发环境搭建：
-  1.1编译环境->VMware12->ubuntu16
+  1.1编译环境  
+   安装->VMware12->ubuntu16（设置帐号密码）  。
+    1.ubuntu不能全屏显示->  安装vmware-tools-distrib解决。
+    2.更改为中文界面。修改网络设置->打开系统设置->配置网络，语言，下载源更新。
+    3.在命令行模式下 ：将freescale.tar.bz2放到 /opt下解压（tar -jxvf）。ubuntu16是64位的：arm-linux-gcc是32位。需要sudo apt-get install lsb-core
+      ；修改sh默认链接到bash: sudo dpkg-reconfigure dash 选择no。
+    4.vim编译环境设置。配置网上找。->sudo vim/etc/vim/vimrc->输入密码更改。
+    5.TEST->在test文件夹下打开命令行 执行make clean-> make->  /opt/freescale/usr/local/gcc-4.1.2-glibc-2.5-nptl-3/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc khmer_test.c -I./inc -I./inc/fribidi -o khmer_test -L./lib -ldev -ldl -lfribidi -lpthread
+     编译完成。
+        开发环境初步搭建。
+2.        
+    
