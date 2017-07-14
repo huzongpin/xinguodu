@@ -23,6 +23,7 @@
        192.168.182.100的配置文件：->Filenames Always Use UTF8 的值由00000000，修改为00000001。
 2. source-insight使用**
     新建个工程，然后加入代码路径（映射的盘），然后->add tree，然后再projec菜单下->同步文件。
+    中文注释乱码解决方法：Options->Preferences->Files->Default Encoding->gb312_193，需要重建项目.
  
 3.Linux shell（默认使用Bash）  
             /***************************/要求 使用shell编写脚本打印当前目录下所有文件
