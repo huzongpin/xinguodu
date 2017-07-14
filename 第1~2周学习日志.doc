@@ -11,8 +11,7 @@
     5.写hello.c,  ->gcc hello.c->生成.out ->./a.out  ->hello,world。 
      TEST->在test文件夹下打开命令行 执行make clean-> make->  /opt/freescale/usr/local/gcc-4.1.2-glibc-2.5-nptl-3/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc khmer_test.c -I./inc -I./inc/fribidi -o khmer_test -L./lib -ldev -ldl -lfribidi -lpthread
      编译完成。
-        开发环境初步搭建。
-        
+     
    1.2samba服务器
    虚拟机环境下，root模式-安装samba  完成设置;
     安装openSSH Server ;执行sudo ps -e |grep ssh->回车->有sshd,说明ssh服务已经启动。
@@ -20,8 +19,45 @@
     安装secureCRT 
     在windows端 运行 \\ip地址\用户名（\\192.168.182.100\huzongpin）；crt连接。
     中文乱码的话 外观改utf-8。
-    CRTFx乱码的话  修改- C:\Users\huzongpin\Desktop\securcrt\SecureCRSecureFXPortable64\Data\Settings\Config\Sessions -
-     192.168.182.100的配置文件：->Filenames Always Use UTF8 的值由00000000，修改为00000001。
+
 2. source-insight使用**
     新建个工程，然后加入代码路径（映射的盘），然后->add tree，然后再projec菜单下->同步文件。
-    
+ 
+3.Linux shell（默认使用Bash）  
+            /***************************/要求 使用shell编写脚本打印当前目录下所有文件
+ 命令行解释器->传给系统内核      
+    提示符：$-普通用户  #-超级用户   *-任意长度字符串  ？-任意单个字符
+    字符#开头的正文表注释行
+    1. eg: hello.sh
+     crt命令行 ->vi hello.sh  
+        #！bin/sh
+        echo "hello linux!"
+     之后 sh hellowd.sh  
+    2.linux根据 #! 确定后面的文件类型
+    3.echo 输出
+    4.Bash 结尾处没有分号
+    5，关于定义变量   只要之前没有定义过，后续就能直接使用。    必须在变量前加$。
+    6.shell输入->read 函数
+    7.shell中的数组  
+     支持一维数组 不限定大小 
+     取值方式是${a[]}，其余类似c。  a[@]、a[*]可以遍历整个数组。
+    8. chmod +x (..).sh    添加可运行权限    执行./（..）.sh。
+4.Makefile
+  
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
