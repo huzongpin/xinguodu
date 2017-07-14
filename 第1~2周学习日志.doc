@@ -16,10 +16,11 @@
    虚拟机环境下，root模式-安装samba  完成设置;
     安装openSSH Server ;执行sudo ps -e |grep ssh->回车->有sshd,说明ssh服务已经启动。
    1.3 secureCRT
-    安装secureCRT 
-    在windows端 运行 \\ip地址\用户名（\\192.168.182.100\huzongpin）；crt连接。
-    中文乱码的话 外观改utf-8。
-
+     1.安装secureCRT 
+     2.在windows端 运行 \\ip地址\用户名（\\192.168.182.100\huzongpin）；crt连接。
+     3.中文乱码的话 外观改utf-8。
+     4.CRTFx乱码的话  修改- C:\Users\huzongpin\Desktop\securcrt\SecureCRSecureFXPortable64\Data\Settings\Config\Sessions -
+       192.168.182.100的配置文件：->Filenames Always Use UTF8 的值由00000000，修改为00000001。
 2. source-insight使用**
     新建个工程，然后加入代码路径（映射的盘），然后->add tree，然后再projec菜单下->同步文件。
  
