@@ -51,6 +51,7 @@
         ${file:5:5}：提取第 5 个字节右边的连续5个字节
     9. shell脚本报错：-bash: xxx: /bin/sh^M    执行dos2unix 改文件格式
     10.tree指令 树状显示出当前目录下所有文件
+    11.    
 4.Makefile
    参考网址：http://blog.csdn.net/liang13664759/article/details/1771246/
   
