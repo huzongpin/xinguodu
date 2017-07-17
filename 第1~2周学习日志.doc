@@ -1,5 +1,5 @@
 第1~2周学习日志
-                --20170711
+                                                                                                 --20170711
 1、开发环境搭建：
   1.1编译环境  
    安装->VMware12->ubuntu16（设置帐号密码）  。
@@ -52,6 +52,7 @@
     9. shell脚本报错：-bash: xxx: /bin/sh^M    执行dos2unix 改文件格式
     10.tree指令 树状显示出当前目录下所有文件
 4.Makefile
+   参考网址：http://blog.csdn.net/liang13664759/article/details/1771246/
   
      
      
