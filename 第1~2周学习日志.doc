@@ -73,8 +73,10 @@
 　　   >或者<或者=是用于字符串的比较，如果用于整数比较，使用：
       -lt，小于 ；-le，小于等于 ； -eq，等于； - ge，大于等于； -gt，大于；  -ne，不等于
 
-      
-4.Makefile
+4.GNU Linux 64位系统中fatal error: stdio.h: 没有那个文件或目录的错误的解决方法 :   32位一般不会出现->
+  可以在命令行输入如下的命令进行安装：  sudo apt-get install  build-essential
+  也可以单个包进行安装，如：sudo apt-get install libc6-dev      
+5.Makefile
    参考网址：http://blog.csdn.net/liang13664759/article/details/1771246/
   
      
