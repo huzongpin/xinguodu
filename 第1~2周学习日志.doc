@@ -23,7 +23,7 @@
        192.168.182.100的配置文件：->Filenames Always Use UTF8 的值由00000000，修改为00000001。
 2. source-insight使用**
     新建个工程，然后加入代码路径（映射的盘），然后->add tree，然后再projec菜单下->同步文件。
-    中文注释乱码解决方法：Options->Preferences->Files->Default Encoding->gb312_193，需要重建项目.
+    中文注释乱码解决方法：Options->Preferences->Files->Default Encoding->gb2 312_193，需要重建项目.
  
 3.Linux shell（默认使用Bash）  
             /***************************/要求 使用shell编写脚本打印当前目录下所有文件
@@ -78,6 +78,12 @@
   也可以单个包进行安装，如：sudo apt-get install libc6-dev      
 5.Makefile
    参考网址：http://blog.csdn.net/liang13664759/article/details/1771246/
+    实现自动化编译
+  规则：
+   1）如果这个工程没有编译过，那么我们的所有 C 文件都要编译并被链接。
+   2）如果这个工程的某几个 C 文件被修改，那么我们只编译被修改的 C 文件，并链接目标。
+   3）如果这个工程的头文件被改变了，那么我们需要编译引用了这几个头文件的 C 文件，并链接目标程序
+   
   
      
      
