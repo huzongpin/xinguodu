@@ -74,8 +74,9 @@
       -lt，小于 ；-le，小于等于 ； -eq，等于； - ge，大于等于； -gt，大于；  -ne，不等于
 
 4.GNU Linux 64位系统中fatal error: stdio.h: 没有那个文件或目录的错误的解决方法 :   32位一般不会出现->
-  可以在命令行输入如下的命令进行安装：  sudo apt-get install  build-essential
-  也可以单个包进行安装，如：sudo apt-get install libc6-dev    
+  4.1可以在命令行输入如下的命令进行安装：  sudo apt-get install  build-essential
+    也可以单个包进行安装，如：sudo apt-get install libc6-dev    
+  4.2 检查头文件的书写
   
 5.Makefile
    5.1参考网址：http://blog.csdn.net/liang13664759/article/details/1771246/
@@ -118,6 +119,7 @@
    自动化变量“$@” 表示当前规则中所有目标的集合。
  5.11 自动生成依赖性
     -M 编译器自动找寻源文件中包含的头文件，并生成一个依赖关系。 gnu下用-MM。
+    Euclid 算法
   规范软件编写，便于移植和维护。
     
   
