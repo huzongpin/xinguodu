@@ -45,4 +45,7 @@
 6.Pos机捕获串口打印操作
      release环境、debug环境；
      P平台机器；
+7.unix环境高级编程 
+   7.1 apue.h是作者自己写的一个文件，包含了常用的头文件，系统不自带。其中包含了常用的头文件，以及出错处理函数的定义。
+      在http://www.apuebook.com/下载src.tar.gz源代码的压缩包。1、解压至/home/user/目录下；；   2、修改 Make.defines.linux中的WKDIR=/home/xxx/apue.2e，为WKDIR=/home/user/apue.2e；；   3、返回至apue.2e目录下面，修改linux.mk，将里面的nawk全部改为awk，可以使用这个命令 ：%s/nawk/awk/g  ；； 4、make ；；  5、将/home/user/apue.2e/include/apue.h和/home/user/apue.2e/lib/error.c复制到/usr/include目录下
     
