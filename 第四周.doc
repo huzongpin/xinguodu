@@ -31,3 +31,22 @@
 　　/sound：ALSA,OSS音频设备的驱动核心代码和常用设备驱动。
 
 　　/usr：实现了用于打包和压缩的cpio等。
+  
+  
+  假设想把自己写的一个flash的驱动程式加载到工程中，而且能够通过menuconfig配置内核时选择该驱动该怎么办呢？能够分三步：
+第一：将您写的flashtest.c 文档添加到/driver/mtd/maps/ 目录下。
+第二：修改/driver/mtd/maps目录下的kconfig文档：
+config MTD_flashtest
+tristate “ap71 flash"
+这样当make menuconfig时 ，将会出现 ap71 flash选项。
+第三：修改该目录下makefile文档。
+添加如下内容：obj-$(CONFIG_MTD_flashtest)    += flashtest.o
+这样，当您运行make menucofnig时，您将发现ap71 flash选项，假如您选择了此项。该选择就会保存在.config文档中。当您编译内核时，将会读取.config文档，当发现ap71 flash 选项为yes 时，系统在调用/driver/mtd/maps/下的makefile 时，将会把 flashtest.o 加入到内核中。即可达到您的目的
+
+
+vIMtutor：：
+  wget -qO- https://raw.github.com/ma6174/vim/master/setup.sh | sh -x
+
+ vim学习命令：命令行输入 vimtutor
+
+ http://blog.csdn.net/yaoxiaokui/article/details/49153179
