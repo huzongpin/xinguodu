@@ -3,3 +3,7 @@ mknod   /dev
 1.应用程序和设备进行数据交互时，是以字节单位进行的。
 2.访问的数据是连续时，实时。
 3.不带缓存，块设备驱动带有缓存。
+
+
+/home/zongpin/Desktop/workspace/ex258/kernel   make menuconfig
+cp .config  skip..config
