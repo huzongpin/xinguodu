@@ -7,3 +7,10 @@ mknod   /dev
 
 /home/zongpin/Desktop/workspace/ex258/kernel   make menuconfig
 cp .config  skip..config
+
+
+ // #define FIGETBSZ   _IO(0x00,2)	/* get the block size used for bmap */
+ 
+ 关于不会自动创建设备节点的问题，解决办法可以参考如下函数：
+class_create
+device_create
