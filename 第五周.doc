@@ -16,3 +16,5 @@ class_create
 device_create
 
 find . -name "*.c" | xargs grep register_chrdev | grep int -w
+
+Open-Drain与Push-Pull
