@@ -55,3 +55,6 @@ TA)/θJA。超过最大允许的功率耗散
 
 ELECTRICAL CHARACTERISTICS
 VIN = 19V, TA = +25°C, CELLS=0V, unless otherwise noted.
+
+自动充电
+在电池充电电流低于终止阀值的1分钟后，充电器将停止充电，CHGOK销会变成一个开。如果由于某种原因，电池电压降至4.0/电池，充电将自动启动.
